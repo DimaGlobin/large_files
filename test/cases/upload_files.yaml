@@ -1,0 +1,10 @@
+- name: "upload-files"
+  method: POST
+  path: "/upload"
+  form:
+    files:
+      file1: "testdata/large_files/test_file1.txt"
+  headers:
+    Content-Type: multipart/form-data
+  response:
+    200: ''
